@@ -7853,8 +7853,7 @@ meta_window_set_title (MetaWindow *window,
                        const char *title)
 {
   g_free (window->title);
-  //window->title = g_strdup (title);
-  window->title = g_strdup ("aaaaa");
+  window->title = g_strdup (title);
 
   if (window->frame)
     meta_frame_update_title (window->frame);
